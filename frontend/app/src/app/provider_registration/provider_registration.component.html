@@ -1,0 +1,24 @@
+<h3>Registration</h3>
+<hr>
+<table class="table table striped">
+        <thead>
+            <tr style="background-color: salmon; color: white;">
+                <th>User ID</th>
+                <th>Title</th>
+                <th>Regisration Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of serviceReg">
+                <td>{{item.userid}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.reg_date}}</td>
+                <td>{{item.status}}</td>
+                <td>
+                    <a routerLink="/provider-registration">Verify Details</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>

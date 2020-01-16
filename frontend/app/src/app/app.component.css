@@ -1,0 +1,28 @@
+.header{
+    background-image: linear-gradient(to right, tomato , rebeccapurple);
+    padding: 0.8% 0% 0.8% 0%;
+}
+.logo{
+    color: white;
+    font-size: 60px;
+}
+#headlink{
+    color: white;
+    font-family: Delicious;
+}
+@font-face { 
+    font-family: Delicious;
+    src: url('../assets/FFF_Tusj.ttf'); 
+}
+@font-face { 
+    font-family: CaviarDreams;
+    src: url('../assets/Caviar_Dreams.ttf') 
+}
+.headlist{
+    color: white; font-size: 18px;
+}
+ul.nav a:hover { font-size: 20px !important; transition: font-size 0.1s;}
+ul.nav a:focus { font-size: 20px !important; }
+#headlist{
+    color: white; font-size: 18px; font-family: CaviarDreams;
+}

@@ -1,0 +1,30 @@
+<h3>Transaction</h3>
+<hr>
+<ul style="margin-bottom: 5px;" class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="transaction-debit">Debit</a></li>
+    <li><a data-toggle="tab" href="transaction-credit">Credit</a></li>
+</ul>
+<table class="table table striped">
+    <thead>
+        <tr style="background-color: salmon; color: white;">
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Payment Mode</th>
+            <th>Payment Type</th>
+            <th>Txn ID</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of transactions">
+            <td>{{item.userid}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.amount}}</td>
+            <td>{{item.payment_mode}}</td>
+            <td>{{item.payment_type}}</td>
+            <td>{{item.txn_id}}</td>
+            <td>{{item.txn_status}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+<h3>Service Consumer</h3>
+<hr>
+<ul style="margin-bottom: 5px;" class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="service-consumer-active">Active User</a></li>
+    <li><a data-toggle="tab" href="service-consumer-inactive">Inactive User</a></li>
+</ul>
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+        <table class="table table striped">
+            <thead>
+                <tr style="background-color: salmon; color: white;">
+                    <th>Name</th>
+                    <th>Wallet Balance</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of service_consumer_details">
+                    <td>{{item.name}}</td>
+                    <td>{{item.wallet}}</td>
+                    <td>{{item.location}}</td>
+                    <td>{{item.active_status}}</td>
+                    <td><button (click)="onBlock(item.scid)" class="btn btn-danger">Block</button>
+                        <i (click)="onDelete(item.scid)" style="margin-left: 10px;"
+                            class="glyphicon glyphicon-trash delete"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

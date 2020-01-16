@@ -1,0 +1,24 @@
+<form>
+    <div class="row">
+        <div class="col-6 col-md-4"></div>
+        <div class="col-6 col-md-4">
+            <h1>Login</h1>
+            <hr>
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input [(ngModel)]="username" name="username" type="text" class="form-control">
+
+                <label for="password">Password</label>
+                <input [(ngModel)]="password" name='password' type="password" class="form-control">
+                <div style="margin-top: 15px;">
+                    <button (click)="onLogin()" class="btn login">Login</button>
+                    <button routerLink="/register" class="btn btn-warning pull-right">Register</button>
+                </div>
+                <div style="text-align: center;">
+                    <a href="" class="pull-right">forgot password?</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4"></div>
+    </div>
+</form>

@@ -1,0 +1,20 @@
+<h3>Promotion</h3>
+<hr>
+<table class="table table striped">
+    <thead>
+        <tr style="background-color: salmon; color: white;">
+            <th>Check All</th>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Inactive Days</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of promotions">
+            <td><label class="checkbox-inline"><input type="checkbox" value=""></label></td>
+            <td>{{item.userid}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.incative_days}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-fixed-top header">
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top"> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <strong><a id="headlink" class="navbar-brand logo" routerLink="/login">eZyride</a></strong>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav ">
+                <li><a id="headlist" routerLink="/service-provider">Service Provider</a></li>
+                <li><a id="headlist" routerLink="/service-consumer">Service Consumer</a></li>
+                <li><a id="headlist" routerLink="/transaction-debit">Transaction</a></li>
+                <li><a id="headlist" routerLink="/promotion">Promotion</a></li>
+                <li><a id="headlist" routerLink="/complaint">Complaint</a></li>
+                <li><a id="headlist" routerLink="/provider-registration">Provider Registration</a></li>
+            </ul>
+            <strong><a style="color: white; padding-top: 1%;" routerLink="/login" class="pull-right">Logout</a></strong>
+        </div>
+    </div>
+</nav>
+<div style="margin-top: 5%;" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

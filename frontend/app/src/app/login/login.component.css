@@ -1,0 +1,8 @@
+.login{
+    background-color: rgb(130, 75, 185);
+    color: white;
+}
+.login:hover{
+    background-color: rgb(93, 38, 148);
+    color: white;
+}

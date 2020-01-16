@@ -1,0 +1,24 @@
+<h3>Complaint Box</h3>
+<hr>
+<table class="table table striped">
+    <thead>
+        <tr style="background-color: salmon; color: white;">
+            <th>Complaint ID</th>
+            <th>User ID</th>
+            <th>Issue Date</th>
+            <th>Solve Date</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of complaints">
+            <td>{{item.complaint_id}}</td>
+            <td>{{item.userid}}</td>
+            <td>{{item.issue_date}}</td>
+            <td>{{item.solve_date}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.status}}</td>
+        </tr>
+    </tbody>
+</table>
